@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18EC50F5B1772B039985050A /* Pods_AlbumArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAD7A0FFC6B405BA24B96F9 /* Pods_AlbumArt.framework */; };
+		3745C0111BCD446900041762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3745C0101BCD446900041762 /* AppDelegate.swift */; };
+		3745C0131BCD446900041762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3745C0121BCD446900041762 /* ViewController.swift */; };
+		3745C0161BCD446900041762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3745C0141BCD446900041762 /* Main.storyboard */; };
+		3745C0181BCD446900041762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3745C0171BCD446900041762 /* Assets.xcassets */; };
+		3745C01B1BCD446900041762 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3745C0191BCD446900041762 /* LaunchScreen.storyboard */; };
+		3745C0231BCD452600041762 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3745C0221BCD452600041762 /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		3745C0251BCD51C300041762 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3745C0241BCD51C300041762 /* AlbumCell.swift */; settings = {ASSET_TAGS = (); }; };
+		3745C0271BCD51E000041762 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3745C0261BCD51E000041762 /* AlbumDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3745C0291BCD520300041762 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3745C0281BCD520300041762 /* TrackCell.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3745C00D1BCD446900041762 /* AlbumArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3745C0101BCD446900041762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3745C0121BCD446900041762 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3745C0151BCD446900041762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3745C0171BCD446900041762 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3745C01A1BCD446900041762 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3745C01C1BCD446900041762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3745C0221BCD452600041762 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3745C0241BCD51C300041762 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		3745C0261BCD51E000041762 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumDetailViewController.swift; path = ../AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		3745C0281BCD520300041762 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		3825F467CA49935BA60C397E /* Pods-AlbumArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt.debug.xcconfig"; sourceTree = "<group>"; };
+		743AA24EAB1B0DC7AD5BDF35 /* Pods-AlbumArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt.release.xcconfig"; sourceTree = "<group>"; };
+		9DAD7A0FFC6B405BA24B96F9 /* Pods_AlbumArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlbumArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3745C00A1BCD446900041762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EC50F5B1772B039985050A /* Pods_AlbumArt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346B9D163C20C87F232B0ABF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DAD7A0FFC6B405BA24B96F9 /* Pods_AlbumArt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3745C0041BCD446900041762 = {
+			isa = PBXGroup;
+			children = (
+				3745C00F1BCD446900041762 /* AlbumArt */,
+				3745C00E1BCD446900041762 /* Products */,
+				E9D5767E5F599128FC373D4C /* Pods */,
+				346B9D163C20C87F232B0ABF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3745C00E1BCD446900041762 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3745C00D1BCD446900041762 /* AlbumArt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3745C00F1BCD446900041762 /* AlbumArt */ = {
+			isa = PBXGroup;
+			children = (
+				3745C0141BCD446900041762 /* Main.storyboard */,
+				3745C0121BCD446900041762 /* ViewController.swift */,
+				3745C0241BCD51C300041762 /* AlbumCell.swift */,
+				3745C0261BCD51E000041762 /* AlbumDetailViewController.swift */,
+				3745C0281BCD520300041762 /* TrackCell.swift */,
+				3745C02A1BCD524F00041762 /* System */,
+			);
+			path = AlbumArt;
+			sourceTree = "<group>";
+		};
+		3745C02A1BCD524F00041762 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3745C0171BCD446900041762 /* Assets.xcassets */,
+				3745C0191BCD446900041762 /* LaunchScreen.storyboard */,
+				3745C01C1BCD446900041762 /* Info.plist */,
+				3745C0221BCD452600041762 /* Podfile */,
+				3745C0101BCD446900041762 /* AppDelegate.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		E9D5767E5F599128FC373D4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3825F467CA49935BA60C397E /* Pods-AlbumArt.debug.xcconfig */,
+				743AA24EAB1B0DC7AD5BDF35 /* Pods-AlbumArt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3745C00C1BCD446900041762 /* AlbumArt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3745C01F1BCD446900041762 /* Build configuration list for PBXNativeTarget "AlbumArt" */;
+			buildPhases = (
+				B9B372FC6F0C0CD899966EC8 /* Check Pods Manifest.lock */,
+				3745C0091BCD446900041762 /* Sources */,
+				3745C00A1BCD446900041762 /* Frameworks */,
+				3745C00B1BCD446900041762 /* Resources */,
+				FA4F40739821BFAF4A8F3225 /* Embed Pods Frameworks */,
+				83086AB480BE2103D2B66BDB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlbumArt;
+			productName = AlbumArt;
+			productReference = 3745C00D1BCD446900041762 /* AlbumArt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3745C0051BCD446900041762 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Anjel Villafranco";
+				TargetAttributes = {
+					3745C00C1BCD446900041762 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3745C0081BCD446900041762 /* Build configuration list for PBXProject "AlbumArt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3745C0041BCD446900041762;
+			productRefGroup = 3745C00E1BCD446900041762 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3745C00C1BCD446900041762 /* AlbumArt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3745C00B1BCD446900041762 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3745C0231BCD452600041762 /* Podfile in Resources */,
+				3745C01B1BCD446900041762 /* LaunchScreen.storyboard in Resources */,
+				3745C0181BCD446900041762 /* Assets.xcassets in Resources */,
+				3745C0161BCD446900041762 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83086AB480BE2103D2B66BDB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B372FC6F0C0CD899966EC8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA4F40739821BFAF4A8F3225 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3745C0091BCD446900041762 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3745C0291BCD520300041762 /* TrackCell.swift in Sources */,
+				3745C0131BCD446900041762 /* ViewController.swift in Sources */,
+				3745C0271BCD51E000041762 /* AlbumDetailViewController.swift in Sources */,
+				3745C0111BCD446900041762 /* AppDelegate.swift in Sources */,
+				3745C0251BCD51C300041762 /* AlbumCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3745C0141BCD446900041762 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3745C0151BCD446900041762 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3745C0191BCD446900041762 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3745C01A1BCD446900041762 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3745C01D1BCD446900041762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3745C01E1BCD446900041762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3745C0201BCD446900041762 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3825F467CA49935BA60C397E /* Pods-AlbumArt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlbumArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anjelvillafranco.AlbumArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3745C0211BCD446900041762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743AA24EAB1B0DC7AD5BDF35 /* Pods-AlbumArt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlbumArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anjelvillafranco.AlbumArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3745C0081BCD446900041762 /* Build configuration list for PBXProject "AlbumArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3745C01D1BCD446900041762 /* Debug */,
+				3745C01E1BCD446900041762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3745C01F1BCD446900041762 /* Build configuration list for PBXNativeTarget "AlbumArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3745C0201BCD446900041762 /* Debug */,
+				3745C0211BCD446900041762 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3745C0051BCD446900041762 /* Project object */;
+}
