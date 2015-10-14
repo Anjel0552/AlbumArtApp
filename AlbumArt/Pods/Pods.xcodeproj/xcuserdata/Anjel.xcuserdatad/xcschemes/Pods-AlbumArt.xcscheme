@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7E1AA4C1E98C20E1EC0CAE78'
+               BlueprintIdentifier = '2B60D834EF1C85B88C946A27'
                BlueprintName = 'Pods-AlbumArt'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_AlbumArt.framework'>

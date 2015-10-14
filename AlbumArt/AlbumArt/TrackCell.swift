@@ -8,17 +8,42 @@
 
 import UIKit
 
+import SVGPlayButton 
+
 class TrackCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+        @IBOutlet weak var trackNameLabel: UILabel!
+        
+        @IBOutlet weak var playButton: SVGPlayButton!
+        
+        @IBAction func pressedPlayButton(sender: SVGPlayButton) {
+            
+            print("pressed")
+            
+            
+        }
+        override func awakeFromNib() {
+            
+            
+            //runs after loaded in storyboard
+            
+            print(playButton)
+            
+            playButton.willPlay = { self.willPlayHandler() }
+            playButton.willPause = { self.willPauseHandler() }
+            playButton.progressTrackColor = UIColor.lightGrayColor()
+            playButton.progressColor = UIColor.orangeColor()
+            playButton.playColor = UIColor.redColor()
+            playButton.pauseColor = UIColor.orangeColor()
+            
+        }
+        
+        private func willPlayHandler() {
+            print("willPlay")
+        }
+        
+        private func willPauseHandler() {
+            print("willPause")
+        }
+    
 }

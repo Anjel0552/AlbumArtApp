@@ -8,6 +8,8 @@
 
 import UIKit
 
+import AFNetworking
+
 class AlbumDetailViewController: UIViewController {
     
     var albumInfo: Album! 
@@ -24,22 +26,109 @@ class AlbumDetailViewController: UIViewController {
         albumNameLabel.text = albumInfo.albumName
         albumImageView.image = albumInfo.albumImage ?? albumInfo.getImage()
         albumImageView.contentMode = .ScaleAspectFill
+        print(albumInfo.albumID)
+        
+        if let albumID = albumInfo.albumID {
+            
+            print(albumID)
+            
+            tracksData.findTracksForAlbum("\(albumID)", completion: { () -> () in
+                
+                self.tracksTableView.reloadData()
+                
+                })
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+class TracksDataSource: NSObject, UITableViewDataSource {
+    
+    var tracks: [Track] = []
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return tracks.count
+        
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("TrackCell", forIndexPath: indexPath) as! TrackCell
+        
+        let track = tracks[indexPath.row]
+        
+        cell.trackNameLabel.text = track.trackName
+        
+        return cell
+        
     }
-    */
-
-}
+    
+    let requestManager = AFHTTPRequestOperationManager()
+    
+    func findTracksForAlbum(albumID: String, completion: () -> ()) {
+        
+        tracks = []
+        
+        let urlString = "https://itunes.apple.com/lookup?id=\(albumID)&entity=song"
+        
+        print(urlString)
+        
+        requestManager.GET(urlString, parameters: nil, success: { (operation, data) -> Void in
+            
+            if let foundInfo = data as? Dictionary {
+                
+                if let results = foundInfo["results"] as? [Dictionary] {
+                    
+                    for result in results {
+                        
+                        if result["trackName"] != nil {
+                            
+                            let track = Track(info: result)
+                            self.tracks.append(track)
+                            
+                            
+                            
+                        }
+                        
+                        
+                        
+                        //                        let album = Album(info: result)
+                        //                        self.albums.append(album)
+                        
+                        
+                    }
+                    
+                    completion()
+                    
+                }
+                
+            }
+            
+            print(data)
+            
+            }) { (operation, error) -> Void in
+                
+                print(error)
+                
+        }
+        
+    }
+    class Track: NSObject {
+        
+        var trackName: String?
+        var trackNumber: Int?
+        var trackPrice: String?
+        var mediaURL: String?
+        
+        init(info: Dictionary) {
+            
+            trackName = info["trackName"] as? String
+            trackNumber = info["trackNumber"] as? Int
+            trackPrice = info["trackPrice"] as? String // could be Double
+            mediaURL = info["previewURL"] as? String
+            
+            }
+        }
+    }
